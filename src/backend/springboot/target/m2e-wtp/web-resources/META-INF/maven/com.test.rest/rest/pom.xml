@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.0.BUILD-SNAPSHOT</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.test.rest</groupId>
+	<artifactId>rest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>test.rest</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.groupId>com.test.rest</project.groupId>
+		<project.artifactId>rest</project.artifactId>
+		<project.version>0.0.1-SNAPSHOT</project.version>
+		<docker.image.prefix>springio</docker.image.prefix>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>9.0.20</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>2.1.2.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<version>2.1.2.RELEASE</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+
+			<groupId>com.jayway.restassured</groupId>
+
+			<artifactId>rest-assured</artifactId>
+
+			<version>2.9.0</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/json-path -->
+
+		<dependency>
+
+			<groupId>com.jayway.restassured</groupId>
+
+			<artifactId>json-path</artifactId>
+
+			<version>2.9.0</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured-common -->
+
+		<dependency>
+
+			<groupId>com.jayway.restassured</groupId>
+
+			<artifactId>rest-assured-common</artifactId>
+
+			<version>2.9.0</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/xml-path -->
+
+		<dependency>
+
+			<groupId>com.jayway.restassured</groupId>
+
+			<artifactId>xml-path</artifactId>
+
+			<version>2.9.0</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+
+		<dependency>
+
+			<groupId>org.apache.httpcomponents</groupId>
+
+			<artifactId>httpclient</artifactId>
+
+			<version>4.5.1</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+
+		<dependency>
+
+			<groupId>org.apache.httpcomponents</groupId>
+
+			<artifactId>httpcore</artifactId>
+
+			<version>4.4.3</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
+
+		<dependency>
+
+			<groupId>org.apache.httpcomponents</groupId>
+
+			<artifactId>httpmime</artifactId>
+
+			<version>4.5.1</version>
+
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+
+		<dependency>
+
+			<groupId>com.squareup.okhttp3</groupId>
+
+			<artifactId>okhttp</artifactId>
+
+			<version>3.11.0</version>
+
+		</dependency>
+
+
+
+
+
+		<dependency>
+
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-core</artifactId>
+
+			<version>2.9.6</version>
+
+		</dependency>
+
+
+
+		<dependency>
+
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-databind</artifactId>
+
+			<version>2.9.6</version><!--$NO-MVN-MAN-VER$ -->
+
+		</dependency>
+
+
+
+		<dependency>
+
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-annotations</artifactId>
+
+			<version>2.9.6</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+
+		<dependency>
+
+			<groupId>org.apache.derby</groupId>
+
+			<artifactId>derby</artifactId>
+
+			<version>10.14.2.0</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.1.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jasper</artifactId>
+			<version>9.0.16</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180813</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>rest</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk-12.0.2\bin\javac.exe</executable>
+            </configuration>
+        </plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>
