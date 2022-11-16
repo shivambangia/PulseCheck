@@ -188,7 +188,7 @@
 
 			<artifactId>jackson-databind</artifactId>
 
-			<version>2.9.6</version><!--$NO-MVN-MAN-VER$ -->
+			<version>2.12.7.1</version><!--$NO-MVN-MAN-VER$ -->
 
 		</dependency>
 
